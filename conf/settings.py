@@ -15,10 +15,10 @@ LinuxMonitor = {
         'interval': 30
     },
     'disk': {
-        'interval': 60
+        'interval': 30
     },
     'network': {
-        'interval': 60
+        'interval': 30
     }
 }
 
@@ -103,7 +103,7 @@ MysqlMonitor = {
             "Aborted_clients",
             "Aborted_connects",
         ),
-        'interval': 5
+        'interval': 30
     },
     'mysql_variables': {
         'monitoring_item': (
@@ -114,7 +114,7 @@ MysqlMonitor = {
             'innodb_log_files_in_group',
             'innodb_log_file_size',
         ),
-        'interval': 10
+        'interval': 30
     },
     'mysql_slave_status': {
         'monitoring_item': (
@@ -124,28 +124,28 @@ MysqlMonitor = {
             'Relay_Log_Space',
             'Last_IO_Errno',
         ),
-        'interval': 10
+        'interval': 30
     },
     'mysql_binlog_size_bytes': {
         'monitoring_item': (
             'binlog_space',
         ),
-        'interval': 10
+        'interval': 30
     },
     'mysql_table_statistics': {
-        'interval': 60
+        'interval': 30
     },
     'mysql_total_db_size': {
-        'interval': 20
+        'interval': 30
     },
     'mysql_dbs_size': {
-        'interval': 20
+        'interval': 30
     },
     'mysql_largest_tables': {
-        'interval': 20
+        'interval': 30
     },
     'mysql_most_fragmented_tables': {
-        'interval': 20
+        'interval': 30
     }
 }
 

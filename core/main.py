@@ -6,6 +6,7 @@
 @time:9/7/17 10:29 AM
 """
 import logging
+import time
 
 from plugin.mysql_monitor import MysqlMonitor
 from plugin.linux_monitor import LinuxMonitor
@@ -21,5 +22,5 @@ def run():
     while True:
         mysql_monitor.run()
         linux_monitor.run()
-        # time.sleep(1)
+        time.sleep(10)
     log.debug('main module end')
