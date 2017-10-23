@@ -112,8 +112,9 @@ class InfluxdbUtil(object):
         status = {}
         if points:
             for point in points:
-                table_name = '.'.join([point['table_schema'], point['table_name']])
-                status[table_name] = point['table_size']
+                if points['table_size'] > 314572800:
+                    table_name = '.'.join([point['table_schema'], point['table_name']])
+                    status[table_name] = point['table_size']
 
         return status
 
