@@ -17,7 +17,7 @@ from core import main
 
 logging.basicConfig(
             format='%(asctime)s - (%(threadName)s) - %(message)s in %(funcName)s() at %(filename)s : %(lineno)s',
-            level=logging.DEBUG,
+            level=logging.INFO,
             filename="../log/monitor.log",
             filemode='w',
         )
